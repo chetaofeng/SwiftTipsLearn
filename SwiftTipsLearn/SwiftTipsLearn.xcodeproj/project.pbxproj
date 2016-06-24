@@ -41,6 +41,11 @@
 		CB81B7621D1D6C280073F876 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81B7451D1D6C280073F876 /* TransitionManager.swift */; };
 		CB81B7631D1D6C280073F876 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81B7461D1D6C280073F876 /* TransitionZoom.swift */; };
 		CB81B7641D1D6C280073F876 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81B7471D1D6C280073F876 /* UnwindSegue.swift */; };
+		CB81B76B1D1D77B30073F876 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81B76A1D1D77B30073F876 /* TestViewModel.swift */; };
+		CB81B76E1D1D78B00073F876 /* TestTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81B76D1D1D78B00073F876 /* TestTableView.swift */; };
+		CB81B7701D1D79680073F876 /* AnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81B76F1D1D79680073F876 /* AnimateViewController.swift */; };
+		CB81B7721D1D79FF0073F876 /* TestTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB81B7711D1D79FF0073F876 /* TestTableView.storyboard */; };
+		CB81B7741D1D7D360073F876 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81B7731D1D7D360073F876 /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +86,11 @@
 		CB81B7451D1D6C280073F876 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		CB81B7461D1D6C280073F876 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		CB81B7471D1D6C280073F876 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		CB81B76A1D1D77B30073F876 /* TestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		CB81B76D1D1D78B00073F876 /* TestTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableView.swift; sourceTree = "<group>"; };
+		CB81B76F1D1D79680073F876 /* AnimateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateViewController.swift; sourceTree = "<group>"; };
+		CB81B7711D1D79FF0073F876 /* TestTableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestTableView.storyboard; sourceTree = "<group>"; };
+		CB81B7731D1D7D360073F876 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,14 +123,16 @@
 		CB8164C31D1CDD9100205181 /* SwiftTipsLearn */ = {
 			isa = PBXGroup;
 			children = (
+				CB81B76C1D1D78240073F876 /* StoryBoard */,
+				CB81B7671D1D76780073F876 /* View */,
+				CB81B7661D1D76710073F876 /* Controller */,
+				CB81B7651D1D76660073F876 /* ViewModel */,
 				CB81B7281D1D6C110073F876 /* 3nd Party */,
 				CB8164D61D1CDF0500205181 /* UIViewAnimationGroup */,
 				CB8164C41D1CDD9100205181 /* AppDelegate.swift */,
-				CB8164C61D1CDD9100205181 /* ViewController.swift */,
-				CB8164C81D1CDD9100205181 /* Main.storyboard */,
 				CB8164CB1D1CDD9100205181 /* Assets.xcassets */,
-				CB8164CD1D1CDD9100205181 /* LaunchScreen.storyboard */,
 				CB8164D01D1CDD9100205181 /* Info.plist */,
+				CB81B7731D1D7D360073F876 /* MyViewController.swift */,
 			);
 			path = SwiftTipsLearn;
 			sourceTree = "<group>";
@@ -128,6 +140,7 @@
 		CB8164D61D1CDF0500205181 /* UIViewAnimationGroup */ = {
 			isa = PBXGroup;
 			children = (
+				CB81B76F1D1D79680073F876 /* AnimateViewController.swift */,
 			);
 			name = UIViewAnimationGroup;
 			sourceTree = "<group>";
@@ -175,6 +188,40 @@
 				CB81B7471D1D6C280073F876 /* UnwindSegue.swift */,
 			);
 			path = Spring;
+			sourceTree = "<group>";
+		};
+		CB81B7651D1D76660073F876 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB81B76A1D1D77B30073F876 /* TestViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB81B7661D1D76710073F876 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB8164C61D1CDD9100205181 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CB81B7671D1D76780073F876 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB81B76D1D1D78B00073F876 /* TestTableView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CB81B76C1D1D78240073F876 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CB8164CD1D1CDD9100205181 /* LaunchScreen.storyboard */,
+				CB8164C81D1CDD9100205181 /* Main.storyboard */,
+				CB81B7711D1D79FF0073F876 /* TestTableView.storyboard */,
+			);
+			name = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB81B7721D1D79FF0073F876 /* TestTableView.storyboard in Resources */,
 				CB81B7541D1D6C280073F876 /* Info.plist in Resources */,
 				CB8164CF1D1CDD9100205181 /* LaunchScreen.storyboard in Resources */,
 				CB8164CC1D1CDD9100205181 /* Assets.xcassets in Resources */,
@@ -271,11 +319,15 @@
 				CB81B7551D1D6C280073F876 /* KeyboardLayoutConstraint.swift in Sources */,
 				CB81B75C1D1D6C280073F876 /* SpringButton.swift in Sources */,
 				CB81B7491D1D6C280073F876 /* AsyncImageView.swift in Sources */,
+				CB81B7701D1D79680073F876 /* AnimateViewController.swift in Sources */,
 				CB81B74F1D1D6C280073F876 /* DesignableTabBarController.swift in Sources */,
+				CB81B76B1D1D77B30073F876 /* TestViewModel.swift in Sources */,
 				CB81B74A1D1D6C280073F876 /* AutoTextView.swift in Sources */,
+				CB81B76E1D1D78B00073F876 /* TestTableView.swift in Sources */,
 				CB81B7511D1D6C280073F876 /* DesignableTextView.swift in Sources */,
 				CB81B74E1D1D6C280073F876 /* DesignableLabel.swift in Sources */,
 				CB81B7641D1D6C280073F876 /* UnwindSegue.swift in Sources */,
+				CB81B7741D1D7D360073F876 /* MyViewController.swift in Sources */,
 				CB81B7621D1D6C280073F876 /* TransitionManager.swift in Sources */,
 				CB81B74B1D1D6C280073F876 /* BlurView.swift in Sources */,
 				CB81B7611D1D6C280073F876 /* SpringView.swift in Sources */,
