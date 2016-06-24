@@ -24,11 +24,20 @@
                                     <action selector="startAnimate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oWu-bP-cdb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5l-LH-pRM">
+                                <rect key="frame" x="108" y="438" width="105" height="30"/>
+                                <state key="normal" title="开始Spring动画"/>
+                                <connections>
+                                    <action selector="clickedSpringAnimate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S2y-6P-Cge"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Uk5-ci-cEH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2kp-aU-q2Z"/>
+                            <constraint firstItem="Uk5-ci-cEH" firstAttribute="top" secondItem="m5l-LH-pRM" secondAttribute="bottom" constant="40" id="EK7-XC-IqH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uk5-ci-cEH" secondAttribute="bottom" constant="30" id="MVu-60-VNP"/>
+                            <constraint firstItem="m5l-LH-pRM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hl3-4V-pp1"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

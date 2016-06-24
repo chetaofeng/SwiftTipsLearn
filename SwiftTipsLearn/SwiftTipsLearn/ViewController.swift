@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var animateView :UIView!
+    var springView:SpringView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,7 +21,13 @@ class ViewController: UIViewController {
         self.animateView.backgroundColor = UIColor.redColor()
         self.animateView.center = self.view.center
         
+        self.springView = SpringView(frame: CGRectMake(0,0,200,200))
+        self.springView.layer.cornerRadius = 5
+        self.springView.layer.masksToBounds = true
+        self.springView.backgroundColor = UIColor.blueColor()
+        
         self.view.addSubview(animateView)
+        self.view.addSubview(springView)
     }
 
     @IBAction func startAnimate(sender: AnyObject) {
@@ -43,7 +50,7 @@ class ViewController: UIViewController {
                 }
         }
         
-        UIView.animateKeyframesWithDuration(3, delay: 3, options: UIViewKeyframeAnimationOptions.CalculationModeCubic, animations: { 
+        UIView.animateKeyframesWithDuration(3, delay: 0, options: UIViewKeyframeAnimationOptions.CalculationModeCubic, animations: {
             UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1.5, animations: {
                     self.animateView.center.y -= 100
             })
@@ -54,6 +61,14 @@ class ViewController: UIViewController {
         }) { (finish) in
                 print("animate End")
         }
+    }
+    
+    
+    @IBAction func clickedSpringAnimate(sender: AnyObject) {
+        self.springView.animation = "squeeze"
+        self.springView.curve = "spring"
+        self.springView.duration = 1
+        self.springView.animate()
     }
 }
 
