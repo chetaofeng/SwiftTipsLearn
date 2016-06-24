@@ -54,6 +54,7 @@
 		CB8164C31D1CDD9100205181 /* SwiftTipsLearn */ = {
 			isa = PBXGroup;
 			children = (
+				CB8164D61D1CDF0500205181 /* UIViewAnimationGroup */,
 				CB8164C41D1CDD9100205181 /* AppDelegate.swift */,
 				CB8164C61D1CDD9100205181 /* ViewController.swift */,
 				CB8164C81D1CDD9100205181 /* Main.storyboard */,
@@ -62,6 +63,13 @@
 				CB8164D01D1CDD9100205181 /* Info.plist */,
 			);
 			path = SwiftTipsLearn;
+			sourceTree = "<group>";
+		};
+		CB8164D61D1CDF0500205181 /* UIViewAnimationGroup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UIViewAnimationGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
