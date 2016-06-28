@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--My View Controller-->
+        <!--View Controller-->
         <scene sceneID="fbk-B8-3Lf">
             <objects>
-                <viewController id="phi-zb-jB5" customClass="MyViewController" customModule="SwiftTipsLearn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="phi-zb-jB5" customClass="ViewController" customModule="SwiftTipsLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aF7-tY-pOV"/>
                         <viewControllerLayoutGuide type="bottom" id="0j1-vr-jj9"/>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Aqu-d7-2YS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Aqu-d7-2YS" customClass="TestTableView" customModule="SwiftTipsLearn" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -47,10 +47,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="phi-zb-jB5" id="S5L-5G-s1e"/>
-                                    <outlet property="delegate" destination="phi-zb-jB5" id="mth-iq-mmH"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,7 +59,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="myTableView" destination="Aqu-d7-2YS" id="I8J-tX-f4l"/>
+                        <outlet property="tableView" destination="Aqu-d7-2YS" id="pqp-T7-tcU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36h-oZ-COF" userLabel="First Responder" sceneMemberID="firstResponder"/>

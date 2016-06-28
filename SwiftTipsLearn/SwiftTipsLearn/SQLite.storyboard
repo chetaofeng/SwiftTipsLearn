@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rfh-Sw-rLd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Lite View Controller-->
+        <scene sceneID="QbJ-Ok-hui">
+            <objects>
+                <viewController id="rfh-Sw-rLd" customClass="SQLiteViewController" customModule="SwiftTipsLearn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mah-zZ-6kJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="AYY-4R-DYK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tCd-ru-0lr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iQ9-JF-sTo">
+                                <rect key="frame" x="0.0" y="498" width="320" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gg-6r-JH9">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
+                                        <state key="normal" title="增"/>
+                                        <connections>
+                                            <action selector="addAction:" destination="rfh-Sw-rLd" eventType="touchUpInside" id="CbN-0w-4sY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms1-VP-iCf">
+                                        <rect key="frame" x="64" y="0.0" width="64" height="30"/>
+                                        <state key="normal" title="删"/>
+                                        <connections>
+                                            <action selector="deleteAction:" destination="rfh-Sw-rLd" eventType="touchUpInside" id="LDx-As-nUq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MN-Nf-DmR">
+                                        <rect key="frame" x="128" y="0.0" width="64" height="30"/>
+                                        <state key="normal" title="改"/>
+                                        <connections>
+                                            <action selector="updateAction:" destination="rfh-Sw-rLd" eventType="touchUpInside" id="OwZ-jq-UM7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfm-bn-e0M">
+                                        <rect key="frame" x="192" y="0.0" width="64" height="30"/>
+                                        <state key="normal" title="查"/>
+                                        <connections>
+                                            <action selector="queryAction:" destination="rfh-Sw-rLd" eventType="touchUpInside" id="dLe-Qc-lsw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jom-AT-hAF">
+                                        <rect key="frame" x="256" y="0.0" width="64" height="30"/>
+                                        <state key="normal" title="统计"/>
+                                        <connections>
+                                            <action selector="countAction:" destination="rfh-Sw-rLd" eventType="touchUpInside" id="ZBt-JT-UNU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AYY-4R-DYK" firstAttribute="top" secondItem="iQ9-JF-sTo" secondAttribute="bottom" constant="40" id="cEl-3J-EwD"/>
+                            <constraint firstItem="iQ9-JF-sTo" firstAttribute="width" secondItem="tCd-ru-0lr" secondAttribute="width" id="ebd-qu-0y0"/>
+                            <constraint firstItem="iQ9-JF-sTo" firstAttribute="centerX" secondItem="tCd-ru-0lr" secondAttribute="centerX" id="hlt-Pg-Y7F"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNP-Kr-Sur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="260"/>
+        </scene>
+    </scenes>
+</document>
