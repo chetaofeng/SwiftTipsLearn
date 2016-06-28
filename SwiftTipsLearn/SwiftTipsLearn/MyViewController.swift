@@ -71,11 +71,4 @@ class MyViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
         cell.separatorInset = UIEdgeInsetsZero
         cell.layoutMargins = UIEdgeInsetsZero
     }
-    
-    
-    func scrollViewDidScroll(scrollView: UIScrollView) {
-        for cell in myTableView.visibleCells {  //屏幕显示的cell
-            
-        }
-    }
 }
