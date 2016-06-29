@@ -57,12 +57,34 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vwl-T7-7od">
+                                <rect key="frame" x="0.0" y="388" width="320" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TD-q4-xeZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+                                        <state key="normal" title="读取缓存"/>
+                                        <connections>
+                                            <action selector="getCache:" destination="rfh-Sw-rLd" eventType="touchUpInside" id="8ix-6A-43O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAl-zb-OmL">
+                                        <rect key="frame" x="160" y="0.0" width="160" height="30"/>
+                                        <state key="normal" title="清理缓存"/>
+                                        <connections>
+                                            <action selector="cleanCache:" destination="rfh-Sw-rLd" eventType="touchUpInside" id="9WR-aq-S6a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vwl-T7-7od" firstAttribute="width" secondItem="tCd-ru-0lr" secondAttribute="width" id="Df7-N8-Kg2"/>
                             <constraint firstItem="AYY-4R-DYK" firstAttribute="top" secondItem="iQ9-JF-sTo" secondAttribute="bottom" constant="40" id="cEl-3J-EwD"/>
                             <constraint firstItem="iQ9-JF-sTo" firstAttribute="width" secondItem="tCd-ru-0lr" secondAttribute="width" id="ebd-qu-0y0"/>
                             <constraint firstItem="iQ9-JF-sTo" firstAttribute="centerX" secondItem="tCd-ru-0lr" secondAttribute="centerX" id="hlt-Pg-Y7F"/>
+                            <constraint firstItem="iQ9-JF-sTo" firstAttribute="top" secondItem="vwl-T7-7od" secondAttribute="bottom" constant="80" id="vcf-rQ-u6j"/>
+                            <constraint firstItem="vwl-T7-7od" firstAttribute="centerX" secondItem="tCd-ru-0lr" secondAttribute="centerX" id="vyc-5v-bkN"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

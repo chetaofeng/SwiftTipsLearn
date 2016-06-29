@@ -51,6 +51,12 @@
 		CB81B77C1D2241680073F876 /* SQLite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB81B77B1D2241680073F876 /* SQLite.storyboard */; };
 		CB81B7AD1D2245270073F876 /* SQLiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81B7AC1D2245270073F876 /* SQLiteViewController.swift */; };
 		CB81B7C61D2246ED0073F876 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB81B7B91D22468F0073F876 /* SQLite.framework */; };
+		CB81B7C91D225FC70073F876 /* XCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81B7C81D225FC70073F876 /* XCache.swift */; };
+		CB81B7D41D2362BF0073F876 /* XGifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81B7D31D2362BF0073F876 /* XGifView.swift */; };
+		CB81B7D61D236A9B0073F876 /* XGifView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB81B7D51D236A9B0073F876 /* XGifView.storyboard */; };
+		CB81B7D81D236C6C0073F876 /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = CB81B7D71D236C6C0073F876 /* gif.gif */; };
+		CB81B7DA1D236CBC0073F876 /* XGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81B7D91D236CBC0073F876 /* XGifViewController.swift */; };
+		CB81B7DC1D236F110073F876 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = CB81B7DB1D236F110073F876 /* demo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +159,13 @@
 		CB81B77B1D2241680073F876 /* SQLite.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SQLite.storyboard; sourceTree = "<group>"; };
 		CB81B7AC1D2245270073F876 /* SQLiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteViewController.swift; sourceTree = "<group>"; };
 		CB81B7AE1D22468F0073F876 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../GitHub Files/SQLite.swift/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		CB81B7C81D225FC70073F876 /* XCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCache.swift; sourceTree = "<group>"; };
+		CB81B7D31D2362BF0073F876 /* XGifView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XGifView.swift; sourceTree = "<group>"; };
+		CB81B7D51D236A9B0073F876 /* XGifView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XGifView.storyboard; sourceTree = "<group>"; };
+		CB81B7D71D236C6C0073F876 /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
+		CB81B7D91D236CBC0073F876 /* XGifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XGifViewController.swift; sourceTree = "<group>"; };
+		CB81B7DB1D236F110073F876 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
+		CB81B7DE1D237ADE0073F876 /* SwiftTipsLearn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftTipsLearn-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +200,10 @@
 		CB8164C31D1CDD9100205181 /* SwiftTipsLearn */ = {
 			isa = PBXGroup;
 			children = (
+				CB81B7DB1D236F110073F876 /* demo.gif */,
+				CB81B7D71D236C6C0073F876 /* gif.gif */,
+				CB81B7CB1D2362950073F876 /* XGifView */,
+				CB81B7C71D225F6E0073F876 /* XCache */,
 				CB81B76C1D1D78240073F876 /* StoryBoard */,
 				CB81B7671D1D76780073F876 /* View */,
 				CB81B7661D1D76710073F876 /* Controller */,
@@ -199,6 +216,8 @@
 				CB81B7731D1D7D360073F876 /* MyViewController.swift */,
 				CB81B7771D1D8DA80073F876 /* MyViewController2.swift */,
 				CB81B7AC1D2245270073F876 /* SQLiteViewController.swift */,
+				CB81B7D91D236CBC0073F876 /* XGifViewController.swift */,
+				CB81B7DE1D237ADE0073F876 /* SwiftTipsLearn-Bridging-Header.h */,
 			);
 			path = SwiftTipsLearn;
 			sourceTree = "<group>";
@@ -288,6 +307,7 @@
 				CB81B7711D1D79FF0073F876 /* TestTableView.storyboard */,
 				CB81B7751D1D8D890073F876 /* TestTableView2.storyboard */,
 				CB81B77B1D2241680073F876 /* SQLite.storyboard */,
+				CB81B7D51D236A9B0073F876 /* XGifView.storyboard */,
 			);
 			name = StoryBoard;
 			sourceTree = "<group>";
@@ -304,6 +324,22 @@
 				CB81B7C51D22468F0073F876 /* SQLite.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CB81B7C71D225F6E0073F876 /* XCache */ = {
+			isa = PBXGroup;
+			children = (
+				CB81B7C81D225FC70073F876 /* XCache.swift */,
+			);
+			name = XCache;
+			sourceTree = "<group>";
+		};
+		CB81B7CB1D2362950073F876 /* XGifView */ = {
+			isa = PBXGroup;
+			children = (
+				CB81B7D31D2362BF0073F876 /* XGifView.swift */,
+			);
+			name = XGifView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,8 +465,11 @@
 				CB8164CF1D1CDD9100205181 /* LaunchScreen.storyboard in Resources */,
 				CB8164CC1D1CDD9100205181 /* Assets.xcassets in Resources */,
 				CB8164CA1D1CDD9100205181 /* Main.storyboard in Resources */,
+				CB81B7D61D236A9B0073F876 /* XGifView.storyboard in Resources */,
 				CB81B7761D1D8D890073F876 /* TestTableView2.storyboard in Resources */,
 				CB81B7571D1D6C280073F876 /* LoadingView.xib in Resources */,
+				CB81B7DC1D236F110073F876 /* demo.gif in Resources */,
+				CB81B7D81D236C6C0073F876 /* gif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +485,8 @@
 				CB81B7581D1D6C280073F876 /* Misc.swift in Sources */,
 				CB81B74D1D1D6C280073F876 /* DesignableImageView.swift in Sources */,
 				CB81B75D1D1D6C280073F876 /* SpringImageView.swift in Sources */,
+				CB81B7D41D2362BF0073F876 /* XGifView.swift in Sources */,
+				CB81B7DA1D236CBC0073F876 /* XGifViewController.swift in Sources */,
 				CB8164C71D1CDD9100205181 /* ViewController.swift in Sources */,
 				CB81B7591D1D6C280073F876 /* SoundPlayer.swift in Sources */,
 				CB81B7601D1D6C280073F876 /* SpringTextView.swift in Sources */,
@@ -472,6 +513,7 @@
 				CB81B74E1D1D6C280073F876 /* DesignableLabel.swift in Sources */,
 				CB81B7641D1D6C280073F876 /* UnwindSegue.swift in Sources */,
 				CB81B7741D1D7D360073F876 /* MyViewController.swift in Sources */,
+				CB81B7C91D225FC70073F876 /* XCache.swift in Sources */,
 				CB81B7621D1D6C280073F876 /* TransitionManager.swift in Sources */,
 				CB81B74B1D1D6C280073F876 /* BlurView.swift in Sources */,
 				CB81B7611D1D6C280073F876 /* SpringView.swift in Sources */,
@@ -590,10 +632,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftTipsLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsunis.SwiftTipsLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTipsLearn/SwiftTipsLearn-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -601,10 +646,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftTipsLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsunis.SwiftTipsLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTipsLearn/SwiftTipsLearn-Bridging-Header.h";
 			};
 			name = Release;
 		};

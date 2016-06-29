@@ -78,6 +78,15 @@ class SQLiteViewController: UIViewController {
         let count = dbConn.scalar(users.count)
         print(count)
     }
+   
+    @IBAction func getCache(sender: AnyObject) {
+        print(XCache.getCacheSize())
+    }
+    @IBAction func cleanCache(sender: AnyObject) {
+        XCache.cleanCache { 
+            print("缓存清理完毕")
+        }
+    }
     /*
     // MARK: - Navigation
 
